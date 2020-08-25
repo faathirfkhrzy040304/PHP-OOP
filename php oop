@@ -1,0 +1,40 @@
+<?php  
+// produk jual komik dan game
+class Produk{
+   public $judul = "judul",
+          $penulis = "penulis",
+          $penerbit = "penerbit",
+          $harga = 0;
+   
+    public	function getLabel(){
+    	return "$this->judul, $this->penulis, $this->penerbit, $this->harga	";
+    }
+
+
+}
+
+// $produk1 = new Produk();
+// $produk1->judul = "One piece";
+// var_dump($produk1);
+
+// $produk2 = new Produk();
+
+$produk3 = new Produk();
+$produk3->judul = "Naruto";
+$produk3->penulis = "Mashashi kinmoto";
+$produk3->penerbit = "koronawae";
+$produk3->harga = 30000;
+
+
+$produk4 = new Produk();
+$produk4->judul = "Uncharted";
+$produk4->penulis = "Neil Druckman";
+$produk4->penerbit = "Sony computer";
+$produk4->harga = 52000;
+
+
+echo "komik : " . $produk3->getLabel();
+echo "<br>";
+echo "game : " . $produk4->getLabel();
+
+?>
