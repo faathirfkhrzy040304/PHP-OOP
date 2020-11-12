@@ -77,17 +77,17 @@ class CetakInfoProduk{
 	}
 }
 
-$produk1 = new Komik("Naruto", "Masashi kishimoto", "shonen jump", 30000, 100);
-$produk2 = new Game("Uncharted", "Neil Druckman", "Sony computer", 250000, 25); 
+$produk2 = new Komik("Naruto", "Masashi kishimoto", "shonen jump", 30000, 100);
+$produk3 = new Game("Uncharted", "Neil Druckman", "Sony computer", 250000, 25); 
 
 
-echo $produk1->getInfoProduk();
-echo "<br>";
 echo $produk2->getInfoProduk();
+echo "<br>";
+echo $produk3->getInfoProduk();
 echo "<hr>";
 
-$produk2->setDiskon(50);
-echo $produk2->getHarga();
+$produk3->setDiskon(50);
+echo $produk3->getHarga();
 
 
 
